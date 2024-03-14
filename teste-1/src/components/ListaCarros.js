@@ -12,6 +12,7 @@ const ListaCarros = () => {
     ]);
 
     const [nome, setNome] = useState("Alison") 
+    const [color, setColor] = useState("red")
 
     function mudarNome() {
         let nomes = nome;
@@ -24,8 +25,21 @@ const ListaCarros = () => {
         
     }
 
+    function Mudarcor() {
+        let mudarcor = color;
+
+        if(mudarcor === "green"){
+            setColor("red")
+        } else {
+            setColor("green")
+        }
+
+    }
+
   return (
     <div>
+
+        <button style={{background: color}} onClick={Mudarcor}> mudar cor  </button>
 
         <p>Meu nome é: {nome}</p>
         <button onClick={ mudarNome }> Mudar nome </button>
