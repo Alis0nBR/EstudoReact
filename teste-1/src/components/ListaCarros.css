@@ -1,0 +1,17 @@
+.ListadeCarros {
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 30rem auto 30rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.ListadeCarrosP{
+    background-color:aqua;
+    padding-top: 2rem;
+}
+
+.imagemCarro {
+    max-width: 200px;
+    max-height: 200px;
+}
